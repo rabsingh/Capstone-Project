@@ -34,7 +34,9 @@ ALLOWED_HOSTS = ['8000-rabsingh-capstoneprojec-6q7cx8v6aqm.ws.codeinstitute-ide.
                 'shopping-list-rab-d9ead83627b5.herokuapp.com'
                 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://8000-rabsingh-capstoneprojec-6q7cx8v6aqm.ws.codeinstitute-ide.net',
+                'https://shopping-list-rab-d9ead83627b5.herokuapp.com',
+                ]
 
 
 # Application definition
