@@ -5,6 +5,7 @@ from .models import Item
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import get_object_or_404
+from django.contrib.admin.views.decorators import staff_member_required
 
 @login_required
 def add_item(request):
@@ -43,4 +44,20 @@ def delete_item(request, item_id):
         messages.success(request, 'Item deleted successfully')
     else:
         messages.error(request, 'You can only delete your own items')
+    return redirect('item_list')
+
+
+
+# To authorise items
+@staff_member_required
+def update_authorised_status(request, item_id):
+    """Allow superusers to toggle the 'authorised' status of an item."""
+    item = get_object_or_404(Item, id=item_id)
+    if request.user.is_superuser:
+        item.authorised = not item.authorised  # Toggle the status
+        item.save()
+        status = "authorised" if item.authorised else "pending"
+        messages.success(request, f'Item "{item.item_name}" is now marked as {status}.')
+    else:
+        messages.error(request, 'You do not have permission to change the status of this item.')
     return redirect('item_list')

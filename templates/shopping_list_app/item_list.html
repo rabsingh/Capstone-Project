@@ -38,6 +38,15 @@
                     {% if user.is_staff or user == item.added_by %}
                         <td>
                             <a href="{% url 'delete_item' item.id %}" class="btn btn-danger btn-sm">Delete</a>
+                            {% if user.is_superuser %}
+                                <a href="{% url 'update_status' item.id %}" class="btn btn-info btn-sm">
+                                    {% if item.authorised %}
+                                        Revoke Authorisation
+                                    {% else %}
+                                        Authorise
+                                    {% endif %}
+                                </a>
+                    {% endif %}
                         </td>
                     {% endif %}
                 </tr>
