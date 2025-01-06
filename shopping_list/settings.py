@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     'shopping_list_app',
+     'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = 'item_list'
+LOGIN_URL = 'login'
