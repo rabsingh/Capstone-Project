@@ -28,7 +28,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
+
+# Custom User model setting
+AUTH_USER_MODEL = 'auth.User'
 
 ALLOWED_HOSTS = ['8000-rabsingh-capstoneprojec-6q7cx8v6aqm.ws.codeinstitute-ide.net',
                 'shopping-list-rab-d9ead83627b5.herokuapp.com'
