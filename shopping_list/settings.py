@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     'shopping_list_app',
-     'widget_tweaks',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
