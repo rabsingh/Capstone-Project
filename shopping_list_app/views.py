@@ -4,6 +4,7 @@ from .forms import ItemForm
 from .models import Item
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import get_object_or_404
 
 @login_required
 def add_item(request):
@@ -33,3 +34,13 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'registration/register.html', {'form': form})
+
+
+def delete_item(request, item_id):
+    item = get_object_or_404(Item, id=item_id)
+    if request.user == item.added_by or request.user.is_staff:
+        item.delete()
+        messages.success(request, 'Item deleted successfully')
+    else:
+        messages.error(request, 'You can only delete your own items')
+    return redirect('item_list')

@@ -35,10 +35,9 @@
                             <span class="badge bg-warning">Pending</span>
                         {% endif %}
                     </td>
-                    {% if user.is_staff %}
+                    {% if user.is_staff or user == item.added_by %}
                         <td>
-                            
-                           
+                            <a href="{% url 'delete_item' item.id %}" class="btn btn-danger btn-sm">Delete</a>
                         </td>
                     {% endif %}
                 </tr>
