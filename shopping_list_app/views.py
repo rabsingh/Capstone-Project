@@ -23,6 +23,7 @@ def add_item(request):
         form = ItemForm()
     return render(request, 'shopping_list_app/add_item.html', {'form': form})
 
+@login_required
 def item_list(request):
     items = Item.objects.all().order_by('-week_beginning')
     filter_form = ItemFilterForm(request.GET)
@@ -58,7 +59,7 @@ def register(request):
         form = UserCreationForm()
     return render(request, 'registration/register.html', {'form': form})
 
-
+@login_required
 def delete_item(request, item_id):
     item = get_object_or_404(Item, id=item_id)
     if request.user == item.added_by or request.user.is_staff:
