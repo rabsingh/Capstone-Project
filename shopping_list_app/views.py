@@ -6,6 +6,9 @@ from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import get_object_or_404
 from django.contrib.admin.views.decorators import staff_member_required
+from .forms import ItemFilterForm
+from datetime import datetime, timedelta
+
 
 @login_required
 def add_item(request):
@@ -21,9 +24,28 @@ def add_item(request):
     return render(request, 'shopping_list_app/add_item.html', {'form': form})
 
 def item_list(request):
-    items = Item.objects.all().order_by('-date_added')
-    return render(request, 'shopping_list_app/item_list.html', {'items': items})
+    items = Item.objects.all().order_by('-week_beginning')
+    filter_form = ItemFilterForm(request.GET)
+    
+    if filter_form.is_valid():
+        # Filter by week beginning
+        if filter_form.cleaned_data.get('week_beginning'):
+            items = items.filter(week_beginning=filter_form.cleaned_data['week_beginning'])
+        
+        # Filter by user
+        if filter_form.cleaned_data.get('added_by'):
+            items = items.filter(added_by=filter_form.cleaned_data['added_by'])
+        
+        # Filter by authorization status
+        if filter_form.cleaned_data.get('authorised') in ['True', 'False']:
+            authorized = filter_form.cleaned_data['authorised'] == 'True'
+            items = items.filter(authorised=authorized)
 
+    context = {
+        'items': items,
+        'filter_form': filter_form
+    }
+    return render(request, 'shopping_list_app/item_list.html', context)
 
 def register(request):
     if request.method == 'POST':
