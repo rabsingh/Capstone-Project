@@ -9,6 +9,25 @@ from django.contrib.admin.views.decorators import staff_member_required
 from .forms import ItemFilterForm
 from datetime import datetime, timedelta
 
+@login_required
+def edit_item(request, item_id):
+    item = get_object_or_404(Item, id=item_id)
+    
+    # Check if user is authorized to edit this item
+    if request.user != item.added_by and not request.user.is_staff:
+        messages.error(request, 'You can only edit your own items')
+        return redirect('item_list')
+    
+    if request.method == 'POST':
+        form = ItemForm(request.POST, instance=item)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Item updated successfully')
+            return redirect('item_list')
+    else:
+        form = ItemForm(instance=item)
+    
+    return render(request, 'shopping_list_app/edit_item.html', {'form': form, 'item': item})
 
 @login_required
 def add_item(request):
@@ -70,7 +89,6 @@ def delete_item(request, item_id):
     return redirect('item_list')
 
 
-
 # To authorise items
 @staff_member_required
 def update_authorised_status(request, item_id):
@@ -84,3 +102,6 @@ def update_authorised_status(request, item_id):
     else:
         messages.error(request, 'You do not have permission to change the status of this item.')
     return redirect('item_list')
+
+
+    
