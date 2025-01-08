@@ -14,7 +14,7 @@ def edit_item(request, item_id):
     item = get_object_or_404(Item, id=item_id)
     
     # Check if user is authorized to edit this item
-    if request.user != item.added_by and not request.user.is_staff:
+    if request.user != item.added_by and not request.user.is_superuser:
         messages.error(request, 'You can only edit your own items')
         return redirect('item_list')
     
