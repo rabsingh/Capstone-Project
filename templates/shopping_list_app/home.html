@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1>Welcome to Family Shopping List Manager</h1>
+        <p class="lead">Organize your shopping lists efficiently with our easy-to-use app</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Weekly Planning</h3>
+            <p>Organize items by week starting every Monday</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Shared Lists</h3>
+            <p>Share lists with your family and track authorizations</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Easy Management</h3>
+            <p>Add, edit, and delete items with simple controls</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        {% if user.is_authenticated %}
+            <a href="{% url 'item_list' %}" class="btn btn-primary btn-lg">View Shopping Lists</a>
+        {% else %}
+            <a href="{% url 'login' %}" class="btn btn-primary btn-lg me-3">Login</a>
+            <a href="{% url 'register' %}" class="btn btn-outline-primary btn-lg">Register</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

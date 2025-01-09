@@ -2,13 +2,9 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
 from shopping_list_app import views as app_views
-from django.shortcuts import redirect
-
-def redirect_to_login(request):
-    return redirect('login')
 
 urlpatterns = [
-    path('', redirect_to_login, name='home'), 
+    path('', app_views.home, name='home'),  
     path('admin/', admin.site.urls),
     path('shopping/', include('shopping_list_app.urls')),
     path('login/', auth_views.LoginView.as_view(template_name='registration/login.html'), name='login'),

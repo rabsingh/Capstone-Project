@@ -9,6 +9,10 @@ from django.contrib.admin.views.decorators import staff_member_required
 from .forms import ItemFilterForm
 from datetime import datetime, timedelta
 
+# home page
+def home(request):
+    return render(request, 'shopping_list_app/home.html')
+
 @login_required
 def edit_item(request, item_id):
     item = get_object_or_404(Item, id=item_id)
