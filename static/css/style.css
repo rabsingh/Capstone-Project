@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #4a90e2;
+    --primary-color: #28a745;
     --secondary-color: #f8f9fa;
     --success-color: #28a745;
     --warning-color: #ffc107;
@@ -13,10 +13,11 @@
     background-color:#f4f6f8;
     color: var(--text-color);
     line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
   }
   
   .navbar {
-    background-color: var(--primary-color) !important;
+    background-color: #28a745  !important;
     box-shadow: var(--box-shadow);
   }
   
