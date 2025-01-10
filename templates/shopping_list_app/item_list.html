@@ -78,8 +78,8 @@
                         {% if user.is_staff %}
                             <form method="post" action="{% url 'update_status' item.id %}" class="d-inline-block">
                                 {% csrf_token %}
-                                <button type="submit" class="btn btn-primary btn-sm action-btn">
-                                    Toggle Status
+                                <button type="submit" class="btn btn-info btn-sm action-btn">
+                                    Approve / Revoke
                                 </button>
                             </form>
                         {% endif %}
