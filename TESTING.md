@@ -19,6 +19,7 @@ Tester: [Your Name]
 **Actual Result:** [Document Result]  
 **Status:** [Pass/Fail]  
 **Screenshot:** `TC001_REG_STANDARD.png`
+![Description of the image](shopping_list_app/test_evidence/screenshots/1.png)
 
 ### TC002 - Registration with Mismatched Passwords
 **Priority:** High  
