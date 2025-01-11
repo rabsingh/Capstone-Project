@@ -10,16 +10,16 @@ Tester: [Your Name]
 **Feature:** User Registration  
 **Test Steps:**  
 1. Navigate to registration page  
-2. Enter new username "testuser1"  
+2. Enter new username "testuser"  
 3. Enter valid password "Test123!"  
 4. Confirm password "Test123!"  
 5. Submit registration  
 
 **Expected Result:** Account created, success message shown  
 **Actual Result:** [Document Result]  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC001_REG_STANDARD.png`
-![Description of the image](shopping_list_app/test_evidence/screenshots/1.png)
+**Status:** [Pass]  
+**Screenshot:** `1.png`
+
 
 ### TC002 - Registration with Mismatched Passwords
 **Priority:** High  
@@ -33,8 +33,8 @@ Tester: [Your Name]
 
 **Expected Result:** Error message about password mismatch  
 **Actual Result:** [Document Result]  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC002_REG_MISMATCH.png`
+**Status:** [Pass]  
+**Screenshot:** `2.png`
 
 ### TC003 - Duplicate Username Registration
 **Priority:** High  
@@ -44,8 +44,8 @@ Tester: [Your Name]
 3. Submit registration  
 
 **Expected Result:** Error about existing username  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC003_REG_DUPLICATE.png`
+**Status:** [Pass]  
+**Screenshot:** `3.png`
 
 ## 2. Item Creation Tests
 
@@ -58,13 +58,14 @@ Tester: [Your Name]
 3. Enter:  
    - Item name: "Test Item"  
    - Quantity: 1  
-   - Week Beginning: [Next Monday's date]  
+   - Week Beginning: [Jan 13th 2025]  
    - Notes: "Test notes"  
 4. Submit form  
 
 **Expected Result:** Item created successfully  
 **Status:** [Pass/Fail]  
-**Screenshot:** `TC011_ITEM_CREATE.png`
+**Screenshot:** `4a.png`
+**Screenshot:** `4b.png`
 
 ### TC012 - Create Item with Non-Monday Date
 **Priority:** High  
