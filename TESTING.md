@@ -16,10 +16,9 @@ Tester: [Your Name]
 5. Submit registration  
 
 **Expected Result:** Account created, success message shown  
-**Actual Result:** [Document Result]  
+**Actual Result:** Account created , success message displayed  
 **Status:** [Pass]  
-**Screenshot:** `1.png`
-
+![Screenshot  Description](shopping_list_app/test_evidence/screenshots/1.png)
 
 ### TC002 - Registration with Mismatched Passwords
 **Priority:** High  
@@ -32,9 +31,9 @@ Tester: [Your Name]
 5. Submit registration  
 
 **Expected Result:** Error message about password mismatch  
-**Actual Result:** [Document Result]  
+**Actual Result:** Error message displayed
 **Status:** [Pass]  
-**Screenshot:** `2.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/2.png)
 
 ### TC003 - Duplicate Username Registration
 **Priority:** High  
@@ -43,9 +42,10 @@ Tester: [Your Name]
 2. Use valid password  
 3. Submit registration  
 
-**Expected Result:** Error about existing username  
+**Expected Result:** Error about existing username
+**Actual Result:**  Error message as expected  
 **Status:** [Pass]  
-**Screenshot:** `3.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/3.png)
 
 ## 2. Item Creation Tests
 
@@ -63,9 +63,10 @@ Tester: [Your Name]
 4. Submit form  
 
 **Expected Result:** Item created successfully  
-**Status:** [Pass/Fail]  
-**Screenshot:** `4a.png`
-**Screenshot:** `4b.png`
+**Actual Result:** New item displayed added successfully
+**Status:** [Pass]  
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/4a.png)
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/4b.png)
 
 ### TC012 - Create Item with Non-Monday Date
 **Priority:** High  
@@ -75,8 +76,9 @@ Tester: [Your Name]
 3. Submit form  
 
 **Expected Result:** Validation error for date  
+**Actual Result:** "Week beginning must be a Monday" error message displayed 
 **Status:** [Pass]  
-**Screenshot:** `5.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/5.png)
 
 ## 3. Item List View Tests
 
@@ -88,8 +90,9 @@ Tester: [Your Name]
 3. Check results  
 
 **Expected Result:** Only items from selected week shown  
+**Actual Result:** Correct filtered items displayed
 **Status:** [Pass]  
-**Screenshot:** `6.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/6.png)
 
 ### TC022 - Filter by User
 **Priority:** Medium  
@@ -99,8 +102,9 @@ Tester: [Your Name]
 3. Verify results  
 
 **Expected Result:** Only selected user's items shown  
+**Actual Result:** Correct filtered items displayed
 **Status:** [Pass]  
-**Screenshot:** `7.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/7.png)
 
 ## 4. Item Editing Tests
 
@@ -112,9 +116,10 @@ Tester: [Your Name]
 3. Save changes  
 
 **Expected Result:** Changes saved successfully  
+**Actual Result:** As expected
 **Status:** [Pass]  
-**Screenshot:** `8a.png`
-**Screenshot:** `8b.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/8a.png)
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/8b.png)
 
 ### TC032 - Edit Others' Items
 **Priority:** High  
@@ -123,8 +128,9 @@ Tester: [Your Name]
 2. Submit changes  
 
 **Expected Result:** No Edit facility other then for own items  
+**Actual Result:** No Edit button or facility other then for own items
 **Status:** [Pass]  
-**Screenshot:** `9.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/9.png)
 
 ## 5. Item Deletion Tests
 
@@ -136,9 +142,10 @@ Tester: [Your Name]
 3. Verify deletion  
 
 **Expected Result:** Item deleted successfully  
+**Actual Result:** Item deleleted successfully message displayed
 **Status:** [Pass]  
-**Screenshot:** `10a.png`
-**Screenshot:** `10b.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/10a.png)
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/10b.png)
 
 ### TC042 - Delete as Super User
 **Priority:** High  
@@ -148,10 +155,11 @@ Tester: [Your Name]
 3. Verify deletion  
 
 **Expected Result:** Item deleted successfully  
+**Actual Result:** Item deleleted successfully message displayed
 **Status:** [Pass]  
-**Screenshot:** `11a.png`
-**Screenshot:** `11b.png`
-**Screenshot:** `11c.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/11a.png)
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/11b.png)
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/11c.png)
 
 ## 6. Authorization Tests
 
@@ -164,24 +172,26 @@ Tester: [Your Name]
 4. Verify status change  
 
 **Expected Result:** Authorization status changed  
+**Actual Result:** Item authorised 
 **Status:** [Pass]  
-**Screenshot:** `12a.png`
-**Screenshot:** `12b.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/12a.png)
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/12b.png)
 
 ## 7. User Interface Tests
 
 ### TC062 - Responsive Design
 **Priority:** Medium  
 **Test Steps:**  
-1. Test on mobile width  
-2. Test on tablet width  
-3. Test on desktop  
+1. Test on mobile width - first screenprint  
+2. Test on tablet width - second screenprint
+3. Test on desktop - third screenprint  
 
 **Expected Result:** Proper display at all sizes  
+**Actual Result:** Displaying correctly and clearly
 **Status:** [Pass]  
-**Screenshot:** `13a.png`
-**Screenshot:** `13b.png`
-**Screenshot:** `13c.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/13a.png)
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/13b.png)
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/13c.png)
 
 ## 8. Edge Cases
 
@@ -192,8 +202,9 @@ Tester: [Your Name]
 2. Submit and verify display  
 
 **Expected Result:** Name accepted and displayed properly  
+**Actual Result:** Only 100 characters dispayed 
 **Status:** [Pass]  
-**Screenshot:** `14.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/14.png)
 
 ### TC072 - Special Characters
 **Priority:** Low  
@@ -202,19 +213,21 @@ Tester: [Your Name]
 2. Verify storage and display  
 
 **Expected Result:** Characters handled correctly  
+**Actual Result:** Characters handled correctly
 **Status:** [Pass]  
-**Screenshot:** `15.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/15.png)
 
 ## 9. Permission Tests
 
-### TC081 - Staff Access Rights
+### TC081 - Super-User Access Rights
 **Priority:** High  
 **Test Steps:**  
-1. Login as staff  
+1. Login as super-user  
 2. Attempt all operations  
 3. Verify permissions  
 
 **Expected Result:** Appropriate access levels  
+**Actual Result:** Super-User access working at all levels
 **Status:** [Pass]  
 **Screenshot:** Evidenced from Screenshot already provided in other tests
 
@@ -226,6 +239,7 @@ Tester: [Your Name]
 3. Verify restrictions  
 
 **Expected Result:** Appropriate restrictions  
+**Actual Result:** Regular Users restricted access working correctly
 **Status:** [Pass]  
 **Screenshot:** Evidenced from Screenshot already provided in other tests
 
@@ -233,23 +247,24 @@ Tester: [Your Name]
 
 ### TC091 - Required Fields
 **Priority:** High  
-**Test Steps:**  
-1. Submit forms with missing data  
-2. Check validation messages  
+**Test Steps:**   
+1. Check validation messages
+2. Test quantity limits   
 
 **Expected Result:** Proper validation errors  
-**Status:** [Pass]  
-**Screenshot:** `16.png`
+**Actual Result:** Validation level set to high 
+**Status:** [Pass but improvement required]  
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/16.png)
 
 ### TC092 - Field Constraints
 **Priority:** High  
-**Test Steps:**  
-1. Test quantity limits    
-2. Verify constraints  
+**Test Steps:**    
+1. Verify constraints  
 
 **Expected Result:** All constraints enforced  
+**Actual Result:** Missing date field not allowed 
 **Status:** [Pass]  
-**Screenshot:** `17.png`
+![Screenshot Description](shopping_list_app/test_evidence/screenshots/17.png)
 
 ## Test Summary
 
