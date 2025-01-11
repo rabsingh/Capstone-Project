@@ -71,12 +71,12 @@ Tester: [Your Name]
 **Priority:** High  
 **Test Steps:**  
 1. Follow item creation process  
-2. Enter non-Monday date  
+2. Enter non-Monday date: [15th Jan 2025]
 3. Submit form  
 
 **Expected Result:** Validation error for date  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC012_ITEM_INVALID_DATE.png`
+**Status:** [Pass]  
+**Screenshot:** `5.png`
 
 ## 3. Item List View Tests
 
@@ -88,8 +88,8 @@ Tester: [Your Name]
 3. Check results  
 
 **Expected Result:** Only items from selected week shown  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC021_FILTER_WEEK.png`
+**Status:** [Pass]  
+**Screenshot:** `6.png`
 
 ### TC022 - Filter by User
 **Priority:** Medium  
@@ -99,8 +99,8 @@ Tester: [Your Name]
 3. Verify results  
 
 **Expected Result:** Only selected user's items shown  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC022_FILTER_USER.png`
+**Status:** [Pass]  
+**Screenshot:** `7.png`
 
 ## 4. Item Editing Tests
 
@@ -112,8 +112,9 @@ Tester: [Your Name]
 3. Save changes  
 
 **Expected Result:** Changes saved successfully  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC031_EDIT_OWN.png`
+**Status:** [Pass]  
+**Screenshot:** `8a.png`
+**Screenshot:** `8b.png`
 
 ### TC032 - Edit Others' Items
 **Priority:** High  
@@ -121,9 +122,9 @@ Tester: [Your Name]
 1. Attempt to edit another user's item  
 2. Submit changes  
 
-**Expected Result:** Access denied message  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC032_EDIT_OTHER.png`
+**Expected Result:** No Edit facility other then for own items  
+**Status:** [Pass]  
+**Screenshot:** `9.png`
 
 ## 5. Item Deletion Tests
 
@@ -135,10 +136,11 @@ Tester: [Your Name]
 3. Verify deletion  
 
 **Expected Result:** Item deleted successfully  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC041_DELETE_OWN.png`
+**Status:** [Pass]  
+**Screenshot:** `10a.png`
+**Screenshot:** `10b.png`
 
-### TC042 - Delete as Staff
+### TC042 - Delete as Super User
 **Priority:** High  
 **Test Steps:**  
 1. Login as staff  
@@ -146,8 +148,10 @@ Tester: [Your Name]
 3. Verify deletion  
 
 **Expected Result:** Item deleted successfully  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC042_DELETE_STAFF.png`
+**Status:** [Pass]  
+**Screenshot:** `11a.png`
+**Screenshot:** `11b.png`
+**Screenshot:** `11c.png`
 
 ## 6. Authorization Tests
 
@@ -160,31 +164,11 @@ Tester: [Your Name]
 4. Verify status change  
 
 **Expected Result:** Authorization status changed  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC051_AUTH_SUPER.png`
-
-### TC052 - Authorize as Regular User
-**Priority:** High  
-**Test Steps:**  
-1. Login as regular user  
-2. Attempt to authorize item  
-
-**Expected Result:** Permission denied  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC052_AUTH_REGULAR.png`
+**Status:** [Pass]  
+**Screenshot:** `12a.png`
+**Screenshot:** `12b.png`
 
 ## 7. User Interface Tests
-
-### TC061 - Form Validation Display
-**Priority:** Medium  
-**Test Steps:**  
-1. Submit forms with invalid data  
-2. Check error messages  
-3. Verify styling  
-
-**Expected Result:** Clear error messages shown  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC061_UI_VALIDATION.png`
 
 ### TC062 - Responsive Design
 **Priority:** Medium  
@@ -194,8 +178,10 @@ Tester: [Your Name]
 3. Test on desktop  
 
 **Expected Result:** Proper display at all sizes  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC062_UI_RESPONSIVE.png`
+**Status:** [Pass]  
+**Screenshot:** `13a.png`
+**Screenshot:** `13b.png`
+**Screenshot:** `13c.png`
 
 ## 8. Edge Cases
 
@@ -206,8 +192,8 @@ Tester: [Your Name]
 2. Submit and verify display  
 
 **Expected Result:** Name accepted and displayed properly  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC071_EDGE_MAXNAME.png`
+**Status:** [Pass]  
+**Screenshot:** `14.png`
 
 ### TC072 - Special Characters
 **Priority:** Low  
@@ -216,8 +202,8 @@ Tester: [Your Name]
 2. Verify storage and display  
 
 **Expected Result:** Characters handled correctly  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC072_EDGE_SPECIAL.png`
+**Status:** [Pass]  
+**Screenshot:** `15.png`
 
 ## 9. Permission Tests
 
@@ -229,8 +215,8 @@ Tester: [Your Name]
 3. Verify permissions  
 
 **Expected Result:** Appropriate access levels  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC081_PERM_STAFF.png`
+**Status:** [Pass]  
+**Screenshot:** Evidenced from Screenshot already provided in other tests
 
 ### TC082 - Regular User Rights
 **Priority:** High  
@@ -240,8 +226,8 @@ Tester: [Your Name]
 3. Verify restrictions  
 
 **Expected Result:** Appropriate restrictions  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC082_PERM_USER.png`
+**Status:** [Pass]  
+**Screenshot:** Evidenced from Screenshot already provided in other tests
 
 ## 10. Data Validation Tests
 
@@ -252,28 +238,27 @@ Tester: [Your Name]
 2. Check validation messages  
 
 **Expected Result:** Proper validation errors  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC091_VAL_REQUIRED.png`
+**Status:** [Pass]  
+**Screenshot:** `16.png`
 
 ### TC092 - Field Constraints
 **Priority:** High  
 **Test Steps:**  
-1. Test quantity limits  
-2. Test date validation  
-3. Verify constraints  
+1. Test quantity limits    
+2. Verify constraints  
 
 **Expected Result:** All constraints enforced  
-**Status:** [Pass/Fail]  
-**Screenshot:** `TC092_VAL_CONSTRAINTS.png`
+**Status:** [Pass]  
+**Screenshot:** `17.png`
 
 ## Test Summary
 
 ### Statistics
-**Total Tests:** 20  
-- User Management: 3 tests  
-- Item Operations: 12 tests  
-- Interface: 3 tests  
-- Edge Cases: 2 tests  
+**Total Tests:**   
+- User Management:  tests  
+- Item Operations:  tests  
+- Interface:  tests  
+- Edge Cases:  tests  
 
 ### Results Overview
 - **Tests Passed:** [Number]  
@@ -281,16 +266,15 @@ Tester: [Your Name]
 - **Pass Rate:** [Percentage]  
 
 ### Environment Details
-- **Browser:** [Version]  
-- **Screen Resolution:** [Resolution]  
-- **OS:** [Operating System]  
+- **Browser:** [Chrome]  
+- **Screen Resolution:** [1920 x 1080]  
+- **OS:** [IOS]  
 
 ### Known Issues
 1. [List any issues found]  
 2. [Include severity and impact]  
 
 ### Recommendations
-1. [List improvements]  
-2. [Include priority]  
+1. Grey out all days other then Monday for week beginning  - medium priority 
+2. Limit quantity field - low priority
 
-## Screenshot Organization
