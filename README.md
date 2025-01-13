@@ -44,18 +44,25 @@ Any group of people who share tasks and responsibilities, such as:
 - **As an admin**, I want to control who uses the app and how they use it.
 
 ### 3.2 Use Cases
-#### 3.2.1 Create and Manage Shopping Lists
+#### 3.2.1 Register a Super-User/ User
+- **Actor:** Super-User (Parent) / Normal User (Child)
+- **Description:** Users register to create an account.
+- **Steps:**
+  1. A Normal User enters a username and password to create an account.
+  2. A Super-User is registered from the Django Admin page.
+
+#### 3.2.2 Create and Manage Shopping Lists
 - **Actor:** Super-User (Parent)
 - **Description:** Users can create, edit, and organize shopping lists for groceries.
 - **Steps:**
   1. Super-User opens the app and selects "Add an Item".
   2. Super-User adds items to the list peer week beginning and can specify optional notes.
-  3. Super-User can edit or remove their items.
+  3. Super-User can edit or remove any items.
   4. Super-User marks an item as "Approved," which is updated across all devices.
   5. Super-User can "Revoke" a previously "Approved" item.
   6. Lists are automatically saved and synced across all family members’ devices.
   
-#### 3.2.2 Add to a Shopping List
+#### 3.2.3 Add to a Shopping List
 - **Actor:** Child
 - **Description:** User can add items to shopping lists.
 - **Steps:**
@@ -64,11 +71,12 @@ Any group of people who share tasks and responsibilities, such as:
   3. User can edit or remove only their own items.
   4. Lists are automatically saved and synced across all family members’ devices.
 
+
 ---
 
 ## 4. Wireframes
 Wireframes were created to approximate the look of the app.
-These designs were superseded once development progressed.
+These designs were superseded as development progressed.
 
 ![Wireframe1](shopping_list_app/media/readme_images/Wireframe1.png)
 
@@ -105,17 +113,23 @@ These designs were superseded once development progressed.
 ### 5.7 Other 
 - **AI engines :** ChatGPT and Claude were used to check details of project scoping and planning as well as assist extensively with aspects of coding.
 
+
 ---
 ## 6. Database Schema (ERD)
 
-The Entity Relationship Diagram (ERD) below shows the relationships between the database entities used in the Shopping List App:
+The Entity Relationship Diagram (ERD) below shows the relationships between the database entities used in the Shopping List App.
+
+Th User table stores the profile details of registered Users whilst the Item class stores attributes relatd to items to be ordered.
+
+The User to Items relationship is a one-to-many. 
+
+Django's inbuilt  User, part of the django.contrib.auth module, was used. 
+This class is designed to handle authentication and user-related data such as usernames and passwords.
 
 ![ERD Diagram](shopping_list_app/media/readme_images/ERD.png)
 
 
-
 ---
-
 ## 7. Validation
 
 ### 7.1 HTML Validation
@@ -162,6 +176,8 @@ Url.py
 
 Views.py 
 ![Views.py linter result](shopping_list_app/media/readme_images/views.png)
+
+
 ---
 
 ## 8. Acknowledgments
@@ -170,3 +186,6 @@ Views.py
 - [Bootstrap](https://getbootstrap.com/) for responsive design.
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance testing.
 - ChatGPT and Claude for assisting throughout the project.
+
+
+---
