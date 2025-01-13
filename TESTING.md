@@ -1,11 +1,11 @@
 # Shopping List App - Complete Test Documentation
 
 Date: January 11, 2025  
-Tester: [Your Name]
+Tester: [Rabinder Singh]
 
 ## 1. User Registration and Authentication Tests
 
-### TC001 - Standard User Registration
+### T1 - Standard User Registration
 **Priority:** High  
 **Feature:** User Registration  
 **Test Steps:**  
@@ -20,7 +20,7 @@ Tester: [Your Name]
 **Status:** [Pass]  
 ![Screenshot  Description](shopping_list_app/test_evidence/screenshots/1.png)
 
-### TC002 - Registration with Mismatched Passwords
+### T2 - Registration with Mismatched Passwords
 **Priority:** High  
 **Feature:** User Registration  
 **Test Steps:**  
@@ -35,7 +35,7 @@ Tester: [Your Name]
 **Status:** [Pass]  
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/2.png)
 
-### TC003 - Duplicate Username Registration
+### T3 - Duplicate Username Registration
 **Priority:** High  
 **Test Steps:**  
 1. Attempt to register with existing username  
@@ -49,7 +49,7 @@ Tester: [Your Name]
 
 ## 2. Item Creation Tests
 
-### TC011 - Create Valid Item
+### T4 - Create Valid Item
 **Priority:** High  
 **Feature:** Item Creation  
 **Test Steps:**  
@@ -68,7 +68,7 @@ Tester: [Your Name]
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/4a.png)
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/4b.png)
 
-### TC012 - Create Item with Non-Monday Date
+### T5 - Create Item with Non-Monday Date
 **Priority:** High  
 **Test Steps:**  
 1. Follow item creation process  
@@ -82,7 +82,7 @@ Tester: [Your Name]
 
 ## 3. Item List View Tests
 
-### TC021 - Filter by Week
+### T6 - Filter by Week
 **Priority:** Medium  
 **Test Steps:**  
 1. Create multiple items with different weeks  
@@ -94,7 +94,7 @@ Tester: [Your Name]
 **Status:** [Pass]  
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/6.png)
 
-### TC022 - Filter by User
+### T7 - Filter by User
 **Priority:** Medium  
 **Test Steps:**  
 1. Create items with different users  
@@ -108,7 +108,7 @@ Tester: [Your Name]
 
 ## 4. Item Editing Tests
 
-### TC031 - Edit Own Item
+### T8 - Edit Own Item
 **Priority:** High  
 **Test Steps:**  
 1. Locate own item  
@@ -121,7 +121,7 @@ Tester: [Your Name]
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/8a.png)
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/8b.png)
 
-### TC032 - Edit Others' Items
+### T9 - Edit Others' Items
 **Priority:** High  
 **Test Steps:**  
 1. Attempt to edit another user's item  
@@ -134,7 +134,7 @@ Tester: [Your Name]
 
 ## 5. Item Deletion Tests
 
-### TC041 - Delete Own Item
+### T10 - Delete Own Item
 **Priority:** High  
 **Test Steps:**  
 1. Create test item  
@@ -147,7 +147,7 @@ Tester: [Your Name]
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/10a.png)
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/10b.png)
 
-### TC042 - Delete as Super User
+### T11 - Delete as Super User
 **Priority:** High  
 **Test Steps:**  
 1. Login as staff  
@@ -163,7 +163,7 @@ Tester: [Your Name]
 
 ## 6. Authorization Tests
 
-### TC051 - Authorize as Superuser
+### T12 - Authorize as Superuser
 **Priority:** High  
 **Test Steps:**  
 1. Login as superuser  
@@ -179,7 +179,7 @@ Tester: [Your Name]
 
 ## 7. User Interface Tests
 
-### TC062 - Responsive Design
+### T13 - Responsive Design
 **Priority:** Medium  
 **Test Steps:**  
 1. Test on mobile width - first screenprint  
@@ -195,7 +195,7 @@ Tester: [Your Name]
 
 ## 8. Edge Cases
 
-### TC071 - Maximum Length Item Name
+### T14 - Maximum Length Item Name
 **Priority:** Low  
 **Test Steps:**  
 1. Create item with 100-character name  
@@ -206,7 +206,7 @@ Tester: [Your Name]
 **Status:** [Pass]  
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/14.png)
 
-### TC072 - Special Characters
+### T15 - Special Characters
 **Priority:** Low  
 **Test Steps:**  
 1. Create item with special characters  
@@ -219,7 +219,7 @@ Tester: [Your Name]
 
 ## 9. Permission Tests
 
-### TC081 - Super-User Access Rights
+### T16 - Super-User Access Rights
 **Priority:** High  
 **Test Steps:**  
 1. Login as super-user  
@@ -231,7 +231,7 @@ Tester: [Your Name]
 **Status:** [Pass]  
 **Screenshot:** Evidenced from Screenshot already provided in other tests
 
-### TC082 - Regular User Rights
+### T17 - Regular User Rights
 **Priority:** High  
 **Test Steps:**  
 1. Login as regular user  
@@ -245,7 +245,7 @@ Tester: [Your Name]
 
 ## 10. Data Validation Tests
 
-### TC091 - Required Fields
+### T18 - Required Fields
 **Priority:** High  
 **Test Steps:**   
 1. Check validation messages
@@ -256,7 +256,7 @@ Tester: [Your Name]
 **Status:** [Pass but improvement required]  
 ![Screenshot Description](shopping_list_app/test_evidence/screenshots/16.png)
 
-### TC092 - Field Constraints
+### T19 - Field Constraints
 **Priority:** High  
 **Test Steps:**    
 1. Verify constraints  
@@ -268,17 +268,10 @@ Tester: [Your Name]
 
 ## Test Summary
 
-### Statistics
-**Total Tests:**   
-- User Management:  tests  
-- Item Operations:  tests  
-- Interface:  tests  
-- Edge Cases:  tests  
-
 ### Results Overview
-- **Tests Passed:** [Number]  
-- **Tests Failed:** [Number]  
-- **Pass Rate:** [Percentage]  
+- **Tests Passed:** [19]  
+- **Tests Failed:** [0]  
+- **Pass Rate:** [100%]  
 
 ### Environment Details
 - **Browser:** [Chrome]  
@@ -286,8 +279,7 @@ Tester: [Your Name]
 - **OS:** [IOS]  
 
 ### Known Issues
-1. [List any issues found]  
-2. [Include severity and impact]  
+1. Quantity value needs a limit 
 
 ### Recommendations
 1. Grey out all days other then Monday for week beginning  - medium priority 

@@ -49,7 +49,7 @@ Any group of people who share tasks and responsibilities, such as:
 ![Add Items](shopping_list_app/media/readme_images/Add_Item.png)
 
 
-### Items in the list can be filtered using the fiter form at top of the screen.
+### Items in the list can be filtered using the filter form at top of the screen.
 
 ![Filter Shopping List](shopping_list_app/media/readme_images/Filter.png)
 
