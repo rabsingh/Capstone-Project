@@ -120,6 +120,14 @@ The app’s CSS has been validated using the W3C CSS Validator to ensure proper 
 
 ### 6.3 Testing
 - Extensive tests for key functionalities like registering, login, adding, deleting, and approving items are documented in the TESTING.md
-[Testing Documentation](TESTING.md)
+([Testing Documentation](TESTING.md))
 
+### 6.4 Performance Testing
+- Google Lighthouse was used to test the performance of the website.
+- The results of the tests are screenshot below.
+
+![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse1.png)
+![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse2.png)
+![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse3.png)
+![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse4.png)
 ---
