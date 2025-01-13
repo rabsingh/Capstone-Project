@@ -5,7 +5,7 @@
 
 ## 1. Introduction
 
-### 1.1 Problem Statement
+### 1.1 Purpose Statement
 A family that wants to have a shared shopping list that members can update.  
 A tool to keep on top of family chores and ensure everybody is doing what they are responsible for.  
 
@@ -38,7 +38,7 @@ Any group of people who want a shared shopping list, such as:
 
 ### Shown below are simple user instructions to navaigate the app and its features.  
   
-  
+
 
 ![Home Page](shopping_list_app/media/readme_images/Shopping_List_Home_Page.png)
 
