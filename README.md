@@ -28,26 +28,52 @@ Any group of people who share tasks and responsibilities, such as:
 - Quick and simple entry of items to be added to the shopping list by an authorized user with their own login.
 
 
+## 3. User Instructions
+### The website is accesible from https://shopping-list-rab-d9ead83627b5.herokuapp.com/shopping/
+
+![Home Page](shopping_list_app/media/readme_images/Shopping_List_Home_Page.png)
+
+
+### If a User is not registered they create an acount 
+
+![Registration page](shopping_list_app/media/readme_images/Register.png)
+
+
+### To change profiles and privileges you must login as a Super_User on the Django Admin site.
+
+![Django Admin profiles](shopping_list_app/media/readme_images/Django_Super_User.png)
+
+
+### To add an item select "Add Item" and complete the form.
+
+![Add Items](shopping_list_app/media/readme_images/Add_Item.png)
+
+
+### Items in the list can be filtered using the fiter form at top of the screen.
+
+![Filter Shopping List](shopping_list_app/media/readme_images/Filter.png)
+
+
 ---
 
-## 3. User Stories & Use Cases
+## 4. User Stories & Use Cases
 
-### 3.1 User Stories
+### 4.1 User Stories
 - **As a parent**, I want to add members to my shopping list app so that they can use my app.
 - **As a parent**, I want to have a simple, easy-to-use shopping list always to hand so I never forget buying items for the home.
 - **As a child**, I want to add items that I need my parents to buy so I have what I need.
 - **As a parent**, I want to approve any items added to the list so I have the final say on what is purchased.
 - **As an admin**, I want to control who uses the app and how they use it.
 
-### 3.2 Use Cases
-#### 3.2.1 Register a Super-User/ User
+### 4.2 Use Cases
+#### 4.2.1 Register a Super-User/ User
 - **Actor:** Super-User (Parent) / Normal User (Child)
 - **Description:** Users register to create an account.
 - **Steps:**
   1. A Normal User enters a username and password to create an account.
   2. A Super-User is registered from the Django Admin page.
 
-#### 3.2.2 Create and Manage Shopping Lists
+#### 4.2.2 Create and Manage Shopping Lists
 - **Actor:** Super-User (Parent)
 - **Description:** Users can create, edit, and organize shopping lists for groceries.
 - **Steps:**
@@ -58,7 +84,7 @@ Any group of people who share tasks and responsibilities, such as:
   5. Super-User can "Revoke" a previously "Approved" item.
   6. Lists are automatically saved and synced across all family members’ devices.
   
-#### 3.2.3 Add to a Shopping List
+#### 4.2.3 Add to a Shopping List
 - **Actor:** Child
 - **Description:** User can add items to shopping lists.
 - **Steps:**
@@ -67,26 +93,10 @@ Any group of people who share tasks and responsibilities, such as:
   3. User can edit or remove only their own items.
   4. Lists are automatically saved and synced across all family members’ devices.
 
-## 3.0.1 User Instructions
-If a User is not registered they create an acount 
-
-![Registration page](shopping_list_app/media/readme_images/Register.png)
-
-To change profiles and privileges you must login as a Super_User on the Django Admin site.
-
-![Django Admin profiles](shopping_list_app/media/readme_images/Django_Super_User.png)
-
-To add an itemm select "Add Item" and complete the form.
-
-![Add Items](shopping_list_app/media/readme_images/Add Item.png)
-
-Items in the list can be filtered using the fiter form at top of the screen.
-
-![Filter Shopping List](shopping_list_app/media/readme_images/Filter.png)
 
 ---
 
-## 4. Wireframes
+## 5. Wireframes
 Wireframes were created to approximate the look of the app.
 These designs were superseded as development progressed.
 
@@ -98,37 +108,37 @@ These designs were superseded as development progressed.
 
 ---
 
-## 5. Technologies Used
+## 6. Technologies Used
 
-### 5.1 Frontend
+### 6.1 Frontend
 - **HTML:** For structuring web content.
 - **CSS:** For styling and layout.
 - **Bootstrap 5.3.0:** For responsive design and prebuilt components.
 - **JavaScript:** For dynamic user interactions.
 
-### 5.2 Backend
+### 6.2 Backend
 - **Python:** Programming language.
 - **Django:** Web framework for building the backend logic and database integration.
 
-### 5.3 Database
+### 6.3 Database
 - **PostgreSQL:** Relational database for storing application data.
 
-### 5.4 Deployment
+### 6.4 Deployment
 - **Heroku:** Platform for hosting the application.
 
-### 5.5 Version Control
+### 6.5 Version Control
 - **GitHub:** For code hosting and version control.
 
-### 5.6 Authentication
+### 6.6 Authentication
 - **Django's in-built user class :** For managing parent and child roles.
 
-### 5.7 Other 
+### 6.7 Other 
 - **AI engines:** ChatGPT and Claude were used to check details of project scoping and planning as well as assist extensively with aspects of coding.
 
 
 ---
 
-## 6. Database Schema (ERD)
+## 7. Database Schema (ERD)
 
 The Entity Relationship Diagram (ERD) below shows the relationships between the database entities used in the Shopping List App.
 
@@ -146,23 +156,23 @@ This class is designed to handle authentication and user-related data such as us
 
 ---
 
-## 7. Validation
+## 8. Validation
 
-### 7.1 HTML Validation
+### 8.1 HTML Validation
 The app’s HTML has been validated using the W3C Markup Validator to ensure proper coding standards.
 
 ![W3C Markup Validation approved](shopping_list_app/media/readme_images/HTML_validation.png)
 
-### 7.2 CSS Validation
+### 8.2 CSS Validation
 The app’s CSS has been validated using the W3C CSS Validator to ensure proper coding standards.
 
 ![W3C CSS Validation approved](shopping_list_app/media/readme_images/CSS_validation.png)
 
-### 7.3 Testing
+### 8.3 Testing
 - Extensive tests for key functionalities like registering, login, adding, deleting, and approving items are documented in the TESTING.md
 ([Testing Documentation](TESTING.md))
 
-### 7.4 Performance Testing
+### 8.4 Performance Testing
 - Google Lighthouse was used to test the performance of the website.
 - The results of the tests showed a performance of 93.
 - Screenshot of complete test results are listed below.
@@ -172,7 +182,7 @@ The app’s CSS has been validated using the W3C CSS Validator to ensure proper 
 ![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse3.png)
 ![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse4.png)
 
-### 7.5 Python Linter Testing
+### 8.5 Python Linter Testing
 - CI Python Linter was used to check py files 
 - Screenshots of test results are shown below
 
@@ -197,7 +207,7 @@ Views.py
 
 ---
 
-## 8. Future Scope
+## 9. Future Scope
 ### Additional Features (for future development)
 - A chore list that links to the shopping list.
 - Children would complete chores and be rewarded so they can add items to the shopping list.
@@ -206,7 +216,7 @@ Views.py
 
 ---
 
-## 9. Acknowledgments
+## 10. Acknowledgments
 
 - [W3C Validator] for HTML & CSS validation.
 - [Bootstrap](https://getbootstrap.com/) for responsive design.
