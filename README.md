@@ -14,7 +14,7 @@ A simple shared shopping list reminder so that things are not forgotten.
 A group management app.  
 
 ### 1.3 Target Audience
-Any group of people who share tasks and responsibilities, such as:
+Any group of people who want a shared shopping list, such as:
 - Families
 - Student houses
 - Shared accommodations
@@ -29,7 +29,11 @@ Any group of people who share tasks and responsibilities, such as:
 
 
 ## 3. User Instructions
-### The website is accesible from https://shopping-list-rab-d9ead83627b5.herokuapp.com/shopping/
+### The Github repo with all files is available at https://github.com/rabsingh/Capstone-Project
+
+### The website is accessible from https://shopping-list-rab-d9ead83627b5.herokuapp.com/shopping/
+
+### Shown below are simple user instructions to navaigate the app and its features.
 
 ![Home Page](shopping_list_app/media/readme_images/Shopping_List_Home_Page.png)
 
@@ -57,6 +61,9 @@ Any group of people who share tasks and responsibilities, such as:
 ---
 
 ## 4. User Stories & Use Cases
+  Agile project management methodology was used to plan the app's development.  
+  Use Stories and Use Cases are listed below.  
+  While the project management board is accesible from the Github repo link https://github.com/users/rabsingh/projects/8 
 
 ### 4.1 User Stories
 - **As a parent**, I want to add members to my shopping list app so that they can use my app.
@@ -93,12 +100,17 @@ Any group of people who share tasks and responsibilities, such as:
   3. User can edit or remove only their own items.
   4. Lists are automatically saved and synced across all family members’ devices.
 
+#### 4.2.4 Additional features
+  Additonal features combining the shopping list app with a chore/ task list and reward app are listed 
+  on the Github Project Board.
+  [GitHub Project Link](https://github.com/users/rabsingh/projects/8)
 
 ---
 
 ## 5. Wireframes
-Wireframes were created to approximate the look of the app.
-These designs were superseded as development progressed.
+Wireframes were created to approximate the look of the app.  
+These designs were superseded as development progressed.  
+Later , due to time constraints and technical limitations, a simpler Bootstrap determined UI was used.
 
 ![Wireframe1](shopping_list_app/media/readme_images/Wireframe1.png)
 
