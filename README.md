@@ -27,7 +27,7 @@ Any group of people who share tasks and responsibilities, such as:
 - The primary feature is a shopping list that can be added, deleted, and amended.
 - Quick and simple entry of items to be added to the shopping list by an authorized user with their own login.
 
-### 2.2 Additional Features
+### 2.2 Additional Features (for future development)
 - A chore list that links to the shopping list.
 - Children can be rewarded so they can add items to the shopping list upon completing a chore.
 - Parents can set rewards on the completion of chores.
@@ -108,9 +108,11 @@ These designs were superseded once development progressed.
 ---
 ## 6. Database Schema (ERD)
 
-Here’s the Entity Relationship Diagram (ERD) that shows the relationships between the database entities used in the Shopping List App:
+The Entity Relationship Diagram (ERD) below shows the relationships between the database entities used in the Shopping List App:
 
-![ERD Diagram](shopping_list_app/media/readme_images/ERD_Diagram.png)
+![ERD Diagram](shopping_list_app/media/readme_images/ERD.png)
+
+
 
 ---
 
@@ -143,7 +145,23 @@ The app’s CSS has been validated using the W3C CSS Validator to ensure proper 
 - CI Python Linter was used to check py files 
 - Screenshots of test results are shown below
 
+Admin.py
+![Admin.py linter result](shopping_list_app/media/readme_images/admin.png)
 
+Forms.py
+![Forms.py linter result](shopping_list_app/media/readme_images/forms.png)
+
+Model.py
+![Model.py linter result](shopping_list_app/media/readme_images/models.png)
+
+Url.py
+![Url.py linter result](shopping_list_app/media/readme_images/url.png)
+
+Url.py
+![Url.py linter result](shopping_list_app/media/readme_images/url.png)
+
+Views.py 
+![Views.py linter result](shopping_list_app/media/readme_images/views.png)
 ---
 
 ## 8. Acknowledgments
