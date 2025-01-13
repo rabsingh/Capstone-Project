@@ -138,6 +138,12 @@ The app’s CSS has been validated using the W3C CSS Validator to ensure proper 
 ![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse2.png)
 ![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse3.png)
 ![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse4.png)
+
+### 7.5 Python Linter Testing
+- CI Python Linter was used to check py files 
+- Screenshots of test results are shown below
+
+
 ---
 
 ## 8. Acknowledgments
