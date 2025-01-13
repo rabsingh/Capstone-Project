@@ -27,10 +27,6 @@ Any group of people who share tasks and responsibilities, such as:
 - The primary feature is a shopping list that can be added, deleted, and amended.
 - Quick and simple entry of items to be added to the shopping list by an authorized user with their own login.
 
-### 2.2 Additional Features (for future development)
-- A chore list that links to the shopping list.
-- Children can be rewarded so they can add items to the shopping list upon completing a chore.
-- Parents can set rewards on the completion of chores.
 
 ---
 
@@ -71,6 +67,22 @@ Any group of people who share tasks and responsibilities, such as:
   3. User can edit or remove only their own items.
   4. Lists are automatically saved and synced across all family members’ devices.
 
+## 3.0.1 User Instructions
+If a User is not registered they create an acount 
+
+![Registration page](shopping_list_app/media/readme_images/Register.png)
+
+To change profiles and privileges you must login as a Super_User on the Django Admin site.
+
+![Django Admin profiles](shopping_list_app/media/readme_images/Django_Super_User.png)
+
+To add an itemm select "Add Item" and complete the form.
+
+![Add Items](shopping_list_app/media/readme_images/Add Item.png)
+
+Items in the list can be filtered using the fiter form at top of the screen.
+
+![Filter Shopping List](shopping_list_app/media/readme_images/Filter.png)
 
 ---
 
@@ -111,15 +123,18 @@ These designs were superseded as development progressed.
 - **Django's in-built user class :** For managing parent and child roles.
 
 ### 5.7 Other 
-- **AI engines :** ChatGPT and Claude were used to check details of project scoping and planning as well as assist extensively with aspects of coding.
+- **AI engines:** ChatGPT and Claude were used to check details of project scoping and planning as well as assist extensively with aspects of coding.
 
 
 ---
+
 ## 6. Database Schema (ERD)
 
 The Entity Relationship Diagram (ERD) below shows the relationships between the database entities used in the Shopping List App.
 
 Th User table stores the profile details of registered Users whilst the Item class stores attributes relatd to items to be ordered.
+
+Items are linked to Users using a ForeignKey field in the database schema (Items.added_by - Users.id).
 
 The User to Items relationship is a one-to-many. 
 
@@ -130,6 +145,7 @@ This class is designed to handle authentication and user-related data such as us
 
 
 ---
+
 ## 7. Validation
 
 ### 7.1 HTML Validation
@@ -148,7 +164,8 @@ The app’s CSS has been validated using the W3C CSS Validator to ensure proper 
 
 ### 7.4 Performance Testing
 - Google Lighthouse was used to test the performance of the website.
-- The results of the tests are screenshot below.
+- The results of the tests showed a performance of 93.
+- Screenshot of complete test results are listed below.
 
 ![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse1.png)
 ![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse2.png)
@@ -180,7 +197,16 @@ Views.py
 
 ---
 
-## 8. Acknowledgments
+## 8. Future Scope
+### Additional Features (for future development)
+- A chore list that links to the shopping list.
+- Children would complete chores and be rewarded so they can add items to the shopping list.
+- Parents would determine rewards/ points on the completion of chores.
+
+
+---
+
+## 9. Acknowledgments
 
 - [W3C Validator] for HTML & CSS validation.
 - [Bootstrap](https://getbootstrap.com/) for responsive design.
