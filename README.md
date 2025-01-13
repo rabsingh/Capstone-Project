@@ -29,11 +29,16 @@ Any group of people who want a shared shopping list, such as:
 
 
 ## 3. User Instructions
+
+##  Deployment
+
 ### The Github repo with all files is available at https://github.com/rabsingh/Capstone-Project
 
 ### The website is accessible from https://shopping-list-rab-d9ead83627b5.herokuapp.com/shopping/
 
-### Shown below are simple user instructions to navaigate the app and its features.
+### Shown below are simple user instructions to navaigate the app and its features.  
+  
+  
 
 ![Home Page](shopping_list_app/media/readme_images/Shopping_List_Home_Page.png)
 
@@ -108,7 +113,7 @@ Any group of people who want a shared shopping list, such as:
 ---
 
 ## 5. Wireframes
-Wireframes were created to approximate the look of the app.  
+Wireframes were created with the aid of Claude AI to approximate the look of the app.  
 These designs were superseded as development progressed.  
 Later , due to time constraints and technical limitations, a simpler Bootstrap determined UI was used.
 
@@ -154,13 +159,13 @@ Later , due to time constraints and technical limitations, a simpler Bootstrap d
 
 The Entity Relationship Diagram (ERD) below shows the relationships between the database entities used in the Shopping List App.
 
-Th User table stores the profile details of registered Users whilst the Item class stores attributes relatd to items to be ordered.
+The User table stores the profile details of registered Users whilst the Item class stores attributes relatd to items to be ordered.
 
 Items are linked to Users using a ForeignKey field in the database schema (Items.added_by - Users.id).
 
 The User to Items relationship is a one-to-many. 
 
-Django's inbuilt  User, part of the django.contrib.auth module, was used. 
+Django's in-built User, part of the django.contrib.auth module, was used. 
 This class is designed to handle authentication and user-related data such as usernames and passwords.
 
 ![ERD Diagram](shopping_list_app/media/readme_images/ERD.png)
@@ -221,6 +226,10 @@ Views.py
 
 ## 9. Future Scope
 ### Additional Features (for future development)
+  
+  An addtional app to link with the Shopping List app is planned for future development.  
+  It's key features would be :  
+
 - A chore list that links to the shopping list.
 - Children would complete chores and be rewarded so they can add items to the shopping list.
 - Parents would determine rewards/ points on the completion of chores.
