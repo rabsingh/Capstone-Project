@@ -5,11 +5,11 @@ from .models import Item
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
     list_display = (
-        'item_name', 
-        'quantity', 
-        'authorised', 
-        'added_by', 
-        'week_beginning', 
+        'item_name',
+        'quantity',
+        'authorised',
+        'added_by',
+        'week_beginning',
         'date_added'
     )
     list_filter = ('authorised', 'week_beginning', 'added_by')

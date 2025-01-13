@@ -142,7 +142,7 @@ The app’s CSS has been validated using the W3C CSS Validator to ensure proper 
 
 ## 8. Acknowledgments
 
-- [W3C Markup Validator](https://validator.w3.org/) for HTML & CSS validation.
+- [W3C Validator] for HTML & CSS validation.
 - [Bootstrap](https://getbootstrap.com/) for responsive design.
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance testing.
 - ChatGPT and Claude for assisting throughout the project.

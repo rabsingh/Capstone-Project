@@ -4,19 +4,21 @@ from django.core.exceptions import ValidationError
 from datetime import datetime
 
 
+# Validate week beginning date to Monday only
 def validate_monday(value):
     if value.weekday() != 0:
         raise ValidationError('Week beginning date must be a Monday.')
 
 
+# Item class model
 class Item(models.Model):
     item_name = models.CharField(max_length=100)
     quantity = models.PositiveIntegerField(default=1)
     notes = models.TextField(blank=True, null=True)
     authorised = models.BooleanField(default=False)
     added_by = models.ForeignKey(
-        User, 
-        on_delete=models.CASCADE, 
+        User,
+        on_delete=models.CASCADE,
         related_name="added_items"
         )
     week_beginning = models.DateField(validators=[validate_monday])
