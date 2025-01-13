@@ -67,7 +67,8 @@ Any group of people who share tasks and responsibilities, such as:
 ---
 
 ## 4. Wireframes
-*(Include your wireframes here. You can describe them briefly or provide links to images.)*
+Wireframes were created to approximate the look of the app.
+These designs were superseded once development progressed.
 
 ![Wireframe1](shopping_list_app/media/readme_images/Wireframe1.png)
 
@@ -105,24 +106,31 @@ Any group of people who share tasks and responsibilities, such as:
 - **AI engines :** ChatGPT and Claude were used to check details of project scoping and planning as well as assist extensively with aspects of coding.
 
 ---
+## 6. Database Schema (ERD)
 
-## 6. Validation
+Here’s the Entity Relationship Diagram (ERD) that shows the relationships between the database entities used in the Shopping List App:
 
-### 6.1 HTML Validation
+![ERD Diagram](shopping_list_app/media/readme_images/ERD_Diagram.png)
+
+---
+
+## 7. Validation
+
+### 7.1 HTML Validation
 The app’s HTML has been validated using the W3C Markup Validator to ensure proper coding standards.
 
 ![W3C Markup Validation approved](shopping_list_app/media/readme_images/HTML_validation.png)
 
-### 6.2 CSS Validation
+### 7.2 CSS Validation
 The app’s CSS has been validated using the W3C CSS Validator to ensure proper coding standards.
 
 ![W3C CSS Validation approved](shopping_list_app/media/readme_images/CSS_validation.png)
 
-### 6.3 Testing
+### 7.3 Testing
 - Extensive tests for key functionalities like registering, login, adding, deleting, and approving items are documented in the TESTING.md
 ([Testing Documentation](TESTING.md))
 
-### 6.4 Performance Testing
+### 7.4 Performance Testing
 - Google Lighthouse was used to test the performance of the website.
 - The results of the tests are screenshot below.
 
@@ -131,3 +139,10 @@ The app’s CSS has been validated using the W3C CSS Validator to ensure proper 
 ![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse3.png)
 ![Google Lighthouse Performance](shopping_list_app/media/readme_images/Lighthouse4.png)
 ---
+
+## 8. Acknowledgments
+
+- [W3C Markup Validator](https://validator.w3.org/) for HTML & CSS validation.
+- [Bootstrap](https://getbootstrap.com/) for responsive design.
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance testing.
+- ChatGPT and Claude for assisting throughout the project.
